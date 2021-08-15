@@ -12,6 +12,7 @@ if (isset($_GET['post']) and $_GET['post'] > 0 and $postId = (int)$_GET['post'])
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@ if (isset($_GET['post']) and $_GET['post'] > 0 and $postId = (int)$_GET['post'])
     <title>Mon blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Mon super blog !</h1>
     <p><a href="index.php">Retour à la liste des billets</a></p>
@@ -42,7 +44,7 @@ if (isset($_GET['post']) and $_GET['post'] > 0 and $postId = (int)$_GET['post'])
         <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
         <br>
         <button type="submit">Envoyer</button>
-    </form>    
+    </form>
     <h2>Commentaires</h2>
     <?php
     $request->closeCursor();
@@ -58,4 +60,5 @@ if (isset($_GET['post']) and $_GET['post'] > 0 and $postId = (int)$_GET['post'])
     $request->closeCursor();
     ?>
 </body>
+
 </html>
